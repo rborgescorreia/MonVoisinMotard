@@ -16,6 +16,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/eclipselink"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jboss-client"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql"/>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_112"/>
+=======
+>>>>>>> parent of bad8d2c... Class Garage + main
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
