@@ -2,28 +2,15 @@ package model;
 
 import java.io.Serializable;
 
-
-
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
-import org.jboss.resteasy.spi.touri.MappedBy;
 
 @Entity
-@Table(name="garage")
-@NamedQueries({
-	@NamedQuery(name="findAll", query="SELECT c FROM Garage c"),
-	@NamedQuery(name="find", query="SELECT c FROM Garage c where c.id = :cle")
-})
-
 public class Garage implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -32,7 +19,7 @@ public class Garage implements Serializable {
 	}
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long id;
+	private int id;
 	
 	public String address;
 	public String zipCode;
@@ -82,7 +69,7 @@ public class Garage implements Serializable {
 		this.photo = photo;
 	}
 	
-	public Garage(Long id, String address, String zipCode, String city, int acreage, String nbBike, String photo) {
+	public Garage(int id, String address, String zipCode, String city, int acreage, String nbBike, String photo) {
 		super();
 		this.id = id;
 		this.address = address;

@@ -10,7 +10,7 @@ public class User {
 
 	@Id
 	@Column(name="idUser")
-	private Long id;
+	private int id;
 	
 	public String lastName;
 	public String firstName;
@@ -24,7 +24,7 @@ public class User {
 	public String description;
 	public String photo;
 	
-	public User(Long id, String lastName, String firstName, String username, String gender, int age, Date birthDate,
+	public User(int id, String lastName, String firstName, String username, String gender, int age, Date birthDate,
 			String email, String phone, String zipCode, String description, String photo) {
 		this.id = id;
 		this.lastName = lastName;
@@ -40,11 +40,11 @@ public class User {
 		this.photo = photo;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
