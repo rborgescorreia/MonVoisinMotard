@@ -1,0 +1,3 @@
+*.java
+build/classes/view/main.class
+*.class
